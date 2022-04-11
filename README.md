@@ -26,10 +26,11 @@ To write a program to implement the the Logistic Regression Model to Predict the
 8.End the program.
 
 ## Program
+```
 ~~~
 Program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
-Developed by: sandeep challa
-RegisterNumber:  212221240011
+Developed by: Koduru Sanath Kumar Reddy
+RegisterNumber:  212221240024
 ~~~
 
 import pandas as pd
@@ -42,7 +43,6 @@ data1.isnull().sum()
 data1.duplicated().sum()
 from sklearn.preprocessing import LabelEncoder
 lc = LabelEncoder()
-
 data1["gender"] = lc.fit_transform(data1["gender"])
 data1["ssc_b"] = lc.fit_transform(data1["ssc_b"])
 data1["hsc_b"] = lc.fit_transform(data1["hsc_b"])
@@ -72,8 +72,8 @@ from sklearn.metrics import classification_report
 classification_report1 = classification_report(y_test,y_pred)
 print(classification_report1)
 print(lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]]))
-~~~
 
+```
 
 
 
