@@ -8,6 +8,7 @@ To write a program to implement the the Logistic Regression Model to Predict the
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
+```
 1.import pandas module.
 2.Read the required csv file using pandas.
 3.Import LabEncoder module.
@@ -18,12 +19,11 @@ To write a program to implement the the Logistic Regression Model to Predict the
 8.End the program.
 
 ## Program:
-```
-/*
+~~~
 Program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
 Developed by:challa sandeep 
 RegisterNumber: 212221240011 
-*/
+~~~
 ```
 import pandas as pd
 data = pd.read_csv("Placement_Data.csv")
@@ -64,6 +64,7 @@ from sklearn.metrics import classification_report
 classification_report1 = classification_report(y_test,y_pred)
 print(classification_report1)
 print(lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]]))
+```
 
 ## Output:
 ![the Logistic Regression Model to Predict the Placement Status of Student](sam.png)
